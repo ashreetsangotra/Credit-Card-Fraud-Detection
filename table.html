@@ -1,0 +1,378 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>DataSet</th>
+      <th>Model</th>
+      <th>Best Estimator</th>
+      <th>Cross Val Acc.</th>
+      <th>Accuracy Score</th>
+      <th>ROC AUC Score</th>
+      <th>Recall Score</th>
+      <th>Precision Score</th>
+      <th>F1 Score</th>
+      <th>Confusion Matrix</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Original</td>
+      <td>Logistic Regression</td>
+      <td>[(C, 1), (penalty, l2)]</td>
+      <td>0.998859</td>
+      <td>0.999122</td>
+      <td>0.818094</td>
+      <td>0.636364</td>
+      <td>0.875</td>
+      <td>0.736842</td>
+      <td>[[5685, 1], [4, 7]]</td>
+    </tr>
+    <tr>
+      <td>Original</td>
+      <td>Support Vectors</td>
+      <td>[(C, 0.5), (kernel, linear)]</td>
+      <td>0.999166</td>
+      <td>0.999298</td>
+      <td>0.863548</td>
+      <td>0.727273</td>
+      <td>0.888889</td>
+      <td>0.8</td>
+      <td>[[5685, 1], [3, 8]]</td>
+    </tr>
+    <tr>
+      <td>Original</td>
+      <td>K Neighbors</td>
+      <td>[(algorithm, auto), (n_neighbors, 9)]</td>
+      <td>0.998903</td>
+      <td>0.998947</td>
+      <td>0.818006</td>
+      <td>0.636364</td>
+      <td>0.777778</td>
+      <td>0.7</td>
+      <td>[[5684, 2], [4, 7]]</td>
+    </tr>
+    <tr>
+      <td>Original</td>
+      <td>Decision Trees</td>
+      <td>[(criterion, entropy), (max_depth, 5), (min_samples_leaf, 6)]</td>
+      <td>0.998727</td>
+      <td>0.999298</td>
+      <td>0.863548</td>
+      <td>0.727273</td>
+      <td>0.888889</td>
+      <td>0.8</td>
+      <td>[[5685, 1], [3, 8]]</td>
+    </tr>
+    <tr>
+      <td>Original</td>
+      <td>XGBoost</td>
+      <td>[(criterion, gini), (max_depth, 2), (min_samples_leaf, 5)]</td>
+      <td>0.999166</td>
+      <td>0.999298</td>
+      <td>0.863548</td>
+      <td>0.727273</td>
+      <td>0.888889</td>
+      <td>0.8</td>
+      <td>[[5685, 1], [3, 8]]</td>
+    </tr>
+    <tr>
+      <td>US Random</td>
+      <td>Logistic Regression</td>
+      <td>[(C, 1), (penalty, l2)]</td>
+      <td>0.91</td>
+      <td>0.92382</td>
+      <td>0.916469</td>
+      <td>0.909091</td>
+      <td>0.0225734</td>
+      <td>0.0440529</td>
+      <td>[[5253, 433], [1, 10]]</td>
+    </tr>
+    <tr>
+      <td>US Random</td>
+      <td>Support Vectors</td>
+      <td>[(C, 0.7), (kernel, sigmoid)]</td>
+      <td>0.9225</td>
+      <td>0.999298</td>
+      <td>0.908915</td>
+      <td>0.818182</td>
+      <td>0.818182</td>
+      <td>0.818182</td>
+      <td>[[5684, 2], [2, 9]]</td>
+    </tr>
+    <tr>
+      <td>US Random</td>
+      <td>K Neighbors</td>
+      <td>[(algorithm, auto), (n_neighbors, 8)]</td>
+      <td>0.871795</td>
+      <td>0.999122</td>
+      <td>0.908827</td>
+      <td>0.818182</td>
+      <td>0.75</td>
+      <td>0.782609</td>
+      <td>[[5683, 3], [2, 9]]</td>
+    </tr>
+    <tr>
+      <td>US Random</td>
+      <td>Decision Trees</td>
+      <td>[(criterion, entropy), (max_depth, 4), (min_samples_leaf, 6)]</td>
+      <td>0.8975</td>
+      <td>0.769177</td>
+      <td>0.793632</td>
+      <td>0.818182</td>
+      <td>0.00680787</td>
+      <td>0.0135034</td>
+      <td>[[4373, 1313], [2, 9]]</td>
+    </tr>
+    <tr>
+      <td>US Random</td>
+      <td>XGBoost</td>
+      <td>[(max_depth, 2)]</td>
+      <td>0.91</td>
+      <td>0.959101</td>
+      <td>0.888778</td>
+      <td>0.818182</td>
+      <td>0.0375</td>
+      <td>0.0717131</td>
+      <td>[[5455, 231], [2, 9]]</td>
+    </tr>
+    <tr>
+      <td>US ClusterCentroids</td>
+      <td>Logistic Regression</td>
+      <td>[(C, 0.01), (penalty, l2)]</td>
+      <td>0.884167</td>
+      <td>0.99842</td>
+      <td>0.908475</td>
+      <td>0.818182</td>
+      <td>0.5625</td>
+      <td>0.666667</td>
+      <td>[[5679, 7], [2, 9]]</td>
+    </tr>
+    <tr>
+      <td>US ClusterCentroids</td>
+      <td>Support Vectors</td>
+      <td>[(C, 0.9), (kernel, sigmoid)]</td>
+      <td>0.8975</td>
+      <td>0.999122</td>
+      <td>0.908827</td>
+      <td>0.818182</td>
+      <td>0.75</td>
+      <td>0.782609</td>
+      <td>[[5683, 3], [2, 9]]</td>
+    </tr>
+    <tr>
+      <td>US ClusterCentroids</td>
+      <td>K Neighbors</td>
+      <td>[(algorithm, auto), (n_neighbors, 9)]</td>
+      <td>0.871795</td>
+      <td>0.999122</td>
+      <td>0.908827</td>
+      <td>0.818182</td>
+      <td>0.75</td>
+      <td>0.782609</td>
+      <td>[[5683, 3], [2, 9]]</td>
+    </tr>
+    <tr>
+      <td>US ClusterCentroids</td>
+      <td>Decision Trees</td>
+      <td>[(criterion, gini), (max_depth, 3), (min_samples_leaf, 5)]</td>
+      <td>0.911667</td>
+      <td>0.60646</td>
+      <td>0.712116</td>
+      <td>0.818182</td>
+      <td>0.00400178</td>
+      <td>0.0079646</td>
+      <td>[[3446, 2240], [2, 9]]</td>
+    </tr>
+    <tr>
+      <td>US ClusterCentroids</td>
+      <td>XGBoost</td>
+      <td>[(max_depth, 2)]</td>
+      <td>0.924167</td>
+      <td>0.842373</td>
+      <td>0.830301</td>
+      <td>0.818182</td>
+      <td>0.00994475</td>
+      <td>0.0196507</td>
+      <td>[[4790, 896], [2, 9]]</td>
+    </tr>
+    <tr>
+      <td>US TomekLinks</td>
+      <td>Logistic Regression</td>
+      <td>[(C, 0.1), (penalty, l2)]</td>
+      <td>0.998903</td>
+      <td>0.998771</td>
+      <td>0.772551</td>
+      <td>0.545455</td>
+      <td>0.75</td>
+      <td>0.631579</td>
+      <td>[[5684, 2], [5, 6]]</td>
+    </tr>
+    <tr>
+      <td>US TomekLinks</td>
+      <td>Support Vectors</td>
+      <td>[(C, 0.9), (kernel, linear)]</td>
+      <td>0.999122</td>
+      <td>0.999122</td>
+      <td>0.86346</td>
+      <td>0.727273</td>
+      <td>0.8</td>
+      <td>0.761905</td>
+      <td>[[5684, 2], [3, 8]]</td>
+    </tr>
+    <tr>
+      <td>US TomekLinks</td>
+      <td>K Neighbors</td>
+      <td>[(algorithm, auto), (n_neighbors, 9)]</td>
+      <td>0.999034</td>
+      <td>0.998947</td>
+      <td>0.818006</td>
+      <td>0.636364</td>
+      <td>0.777778</td>
+      <td>0.7</td>
+      <td>[[5684, 2], [4, 7]]</td>
+    </tr>
+    <tr>
+      <td>US TomekLinks</td>
+      <td>Decision Trees</td>
+      <td>[(criterion, entropy), (max_depth, 5), (min_samples_leaf, 6)]</td>
+      <td>0.99899</td>
+      <td>0.999298</td>
+      <td>0.863548</td>
+      <td>0.727273</td>
+      <td>0.888889</td>
+      <td>0.8</td>
+      <td>[[5685, 1], [3, 8]]</td>
+    </tr>
+    <tr>
+      <td>US TomekLinks</td>
+      <td>XGBoost</td>
+      <td>[(max_depth, 3)]</td>
+      <td>0.999122</td>
+      <td>0.999298</td>
+      <td>0.863548</td>
+      <td>0.727273</td>
+      <td>0.888889</td>
+      <td>0.8</td>
+      <td>[[5685, 1], [3, 8]]</td>
+    </tr>
+    <tr>
+      <td>OS Random</td>
+      <td>Logistic Regression</td>
+      <td>[(C, 1000), (penalty, l2)]</td>
+      <td>0.970103</td>
+      <td>0.969282</td>
+      <td>0.893878</td>
+      <td>0.818182</td>
+      <td>0.0494505</td>
+      <td>0.0932642</td>
+      <td>[[5513, 173], [2, 9]]</td>
+    </tr>
+    <tr>
+      <td>OS Random</td>
+      <td>Support Vectors</td>
+      <td>[(C, 0.9), (kernel, linear)]</td>
+      <td>0.981139</td>
+      <td>0.967702</td>
+      <td>0.893087</td>
+      <td>0.818182</td>
+      <td>0.0471204</td>
+      <td>0.0891089</td>
+      <td>[[5504, 182], [2, 9]]</td>
+    </tr>
+    <tr>
+      <td>OS Random</td>
+      <td>K Neighbors</td>
+      <td>[(algorithm, auto), (n_neighbors, 8)]</td>
+      <td>0.998747</td>
+      <td>0.99684</td>
+      <td>0.907684</td>
+      <td>0.818182</td>
+      <td>0.36</td>
+      <td>0.5</td>
+      <td>[[5670, 16], [2, 9]]</td>
+    </tr>
+    <tr>
+      <td>OS Random</td>
+      <td>Decision Trees</td>
+      <td>[(criterion, gini), (max_depth, 5), (min_samples_leaf, 5)]</td>
+      <td>0.981424</td>
+      <td>0.987186</td>
+      <td>0.902848</td>
+      <td>0.818182</td>
+      <td>0.1125</td>
+      <td>0.197802</td>
+      <td>[[5615, 71], [2, 9]]</td>
+    </tr>
+    <tr>
+      <td>OS Random</td>
+      <td>XGBoost</td>
+      <td>[(max_depth, 4)]</td>
+      <td>0.999824</td>
+      <td>0.999473</td>
+      <td>0.909003</td>
+      <td>0.818182</td>
+      <td>0.9</td>
+      <td>0.857143</td>
+      <td>[[5685, 1], [2, 9]]</td>
+    </tr>
+    <tr>
+      <td>OS SMOTE</td>
+      <td>Logistic Regression</td>
+      <td>[(C, 1000), (penalty, l2)]</td>
+      <td>0.974544</td>
+      <td>0.971564</td>
+      <td>0.895021</td>
+      <td>0.818182</td>
+      <td>0.0532544</td>
+      <td>0.1</td>
+      <td>[[5526, 160], [2, 9]]</td>
+    </tr>
+    <tr>
+      <td>OS SMOTE</td>
+      <td>Support Vectors</td>
+      <td>[(C, 0.9), (kernel, linear)]</td>
+      <td>0.981666</td>
+      <td>0.968755</td>
+      <td>0.893614</td>
+      <td>0.818182</td>
+      <td>0.0486486</td>
+      <td>0.0918367</td>
+      <td>[[5510, 176], [2, 9]]</td>
+    </tr>
+    <tr>
+      <td>OS SMOTE</td>
+      <td>K Neighbors</td>
+      <td>[(algorithm, auto), (n_neighbors, 8)]</td>
+      <td>0.997318</td>
+      <td>0.994207</td>
+      <td>0.906365</td>
+      <td>0.818182</td>
+      <td>0.225</td>
+      <td>0.352941</td>
+      <td>[[5655, 31], [2, 9]]</td>
+    </tr>
+    <tr>
+      <td>OS SMOTE</td>
+      <td>Decision Trees</td>
+      <td>[(criterion, gini), (max_depth, 5), (min_samples_leaf, 6)]</td>
+      <td>0.978589</td>
+      <td>0.960857</td>
+      <td>0.844291</td>
+      <td>0.727273</td>
+      <td>0.0350877</td>
+      <td>0.0669456</td>
+      <td>[[5466, 220], [3, 8]]</td>
+    </tr>
+    <tr>
+      <td>OS SMOTE</td>
+      <td>XGBoost</td>
+      <td>[(max_depth, 4)]</td>
+      <td>0.999692</td>
+      <td>0.999473</td>
+      <td>0.909003</td>
+      <td>0.818182</td>
+      <td>0.9</td>
+      <td>0.857143</td>
+      <td>[[5685, 1], [2, 9]]</td>
+    </tr>
+  </tbody>
+</table>
